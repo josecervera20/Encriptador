@@ -161,6 +161,7 @@ button {
 /* Estilos para el párrafo del pie de página */
 #footer p {
     text-align: center;
+    line-height: 1.5;
 }
 
 /* Estilos para el texto fuerte en el pie de página */
