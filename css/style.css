@@ -1,13 +1,16 @@
+/* Estilos generales del cuerpo de la página */
 body {
     background: #f8f4f7;
     font-family: Inter, Arial;
     scroll-behavior: smooth;
 }
 
+/* Estilo para el texto seleccionado */
 *::selection {
     background-color: #F5C78E;
 }
 
+/* Estilos para el logo en el encabezado */
 header #logo {
     position: fixed;
     width: 10vw;
@@ -15,6 +18,7 @@ header #logo {
     top: 6vh;
 }
 
+/* Estilos para el campo de entrada de texto */
 form #inputTexto {
     font-size: 2vw;
     text-align: left;
@@ -25,14 +29,17 @@ form #inputTexto {
     left: 12vw;
 }
 
+/* Estilo del placeholder del campo de texto */
 form #inputTexto::placeholder {
     color: #0d0d0d;
 }
 
+/* Estilo del campo de texto al estar activo */
 form #inputTexto:active {
     border: none;
 }
 
+/* Estilos para la sección lateral (aside) */
 aside {
     display: flex;
     justify-content: center;
@@ -46,14 +53,15 @@ aside {
     border-radius: 2vw;
 }
 
+/* Estilos para la imagen del muñeco en el aside */
 aside #muñeco {
-    /* Otro ejemplo */
     width: 15vw;
     height: 30vh;
     position: relative;
     top: 15%;
 }
 
+/* Estilos para el contenedor de mensajes en el aside */
 .mensajes {
     display: flex;
     flex-direction: column;
@@ -63,6 +71,7 @@ aside #muñeco {
     top: 60%;
 }
 
+/* Estilo para el título del mensaje en el aside */
 #mensajeAside {
     padding: 0 1rem;
     color: #343A40;
@@ -70,20 +79,25 @@ aside #muñeco {
     font-size: 1.25vw;
 }
 
+/* Estilo para el párrafo del mensaje en el aside */
 #parrafoAside {
     color: #495057;
     font-size: 1vw;
 }
 
+/* Estilos para el botón de copiar */
 #copiarBtn {
     display: none;
+    /* Oculto por defecto */
     position: absolute;
     background: #0d0d0d;
     color: #FDFBF6;
     top: 69vh;
     width: 85;
+    /* Posible error, '85' sin unidad */
 }
 
+/* Estilos para el contenedor del label (icono y texto) */
 .label {
     display: flex;
     flex-direction: row;
@@ -94,17 +108,20 @@ aside #muñeco {
     top: 70vh;
 }
 
+/* Estilos para el icono dentro del label */
 .label #icono {
     width: 3vw;
     height: 3vh;
 }
 
+/* Estilos para el texto del label */
 .label label {
     font-size: .90vw;
     color: #495057;
     opacity: 0.8;
 }
 
+/* Estilos para el contenedor de botones */
 .botones {
     display: flex;
     flex-direction: row;
@@ -116,6 +133,7 @@ aside #muñeco {
     top: 75vh;
 }
 
+/* Estilos generales para todos los botones */
 button {
     font-size: 1.1vw;
     width: 20vw;
@@ -126,11 +144,13 @@ button {
     color: #FDFBF6;
 }
 
+/* Estilos específicos para el botón de desencriptar */
 #desencriptarBtn {
     background: #323131;
     color: #FDFBF6;
 }
 
+/* Estilos para el pie de página */
 #footer {
     position: relative;
     top: 100vh;
@@ -138,14 +158,17 @@ button {
     gap: 5rem;
 }
 
+/* Estilos para el párrafo del pie de página */
 #footer p {
     text-align: center;
 }
 
+/* Estilos para el texto fuerte en el pie de página */
 #footer p strong {
     font-weight: 600;
 }
 
+/* Estilos para el contenedor de iconos sociales */
 .social {
     display: flex;
     flex-direction: row;
@@ -155,6 +178,7 @@ button {
     padding: 1rem;
 }
 
+/* Estilos base para los enlaces de redes sociales */
 .social a {
     position: relative;
     width: 4rem;
@@ -169,6 +193,7 @@ button {
     transition-delay: .2s;
 }
 
+/* Efecto hover para los enlaces de redes sociales */
 .social a:hover {
     bottom: .5rem;
     background-color: #eee;
@@ -176,18 +201,22 @@ button {
     box-shadow: 0 .2rem .5rem #333;
 }
 
+/* Imagen de fondo para el icono de correo */
 .correo {
     background-image: url('../img/correo.svg');
 }
 
+/* Imagen de fondo para el icono de LinkedIn */
 .linkedin {
     background-image: url('../img/linkedin.svg');
 }
 
+/* Imagen de fondo para el icono de GitHub */
 .github {
     background-image: url('../img/github.svg');
 }
 
+/* Media query para pantallas con un ancho máximo de 835px (tabletas) */
 @media screen and (max-width: 835px) {
     header #logo {
         position: relative;
@@ -202,6 +231,7 @@ button {
 
     aside #muñeco {
         display: none;
+        /* Oculta la imagen del muñeco */
     }
 
     aside {
@@ -263,6 +293,7 @@ button {
     }
 }
 
+/* Media query para pantallas con un ancho máximo de 625px (móviles) */
 @media screen and (max-width: 625px) {
     header #logo {
         position: relative;
