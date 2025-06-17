@@ -93,8 +93,7 @@ aside #muñeco {
     background: #0d0d0d;
     color: #FDFBF6;
     top: 69vh;
-    width: 85;
-    /* Posible error, '85' sin unidad */
+    width: 85%;
 }
 
 /* Estilos para el contenedor del label (icono y texto) */
