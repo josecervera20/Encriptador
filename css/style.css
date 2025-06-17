@@ -29,6 +29,13 @@ form #inputTexto {
     left: 12vw;
 }
 
+/* Eliminar el borde y contorno cuando el input está enfocado */
+form #inputTexto:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
 /* Estilo del placeholder del campo de texto */
 form #inputTexto::placeholder {
     color: #0d0d0d;
