@@ -28,7 +28,8 @@ function mostrarAlerta() {
     text: "El texto no puede contener mayúsculas o acentos.",
     duration: 3500,
     style: {
-      background: "linear-gradient(to right, #d01206, #f8f4f7)",
+      background: "#92141f",
+      color: "#ffffff",
       borderRadius: "1vw",
     },
     gravity: "top",
@@ -95,7 +96,8 @@ function encriptarTexto() {
       text: "Por favor, ingresa un texto para encriptar.",
       duration: 3000,
       style: {
-        background: "linear-gradient(to right, #ffc107, #fff)",
+        background: "#ffd737",
+        color: "#000000",
         borderRadius: "1vw",
       },
       gravity: "top",
@@ -133,7 +135,8 @@ function desencriptarTexto() {
       text: "Por favor, ingresa un texto para desencriptar.",
       duration: 3000,
       style: {
-        background: "linear-gradient(to right, #ffc107, #fff)",
+        background: "#ffd737",
+        color: "#000000",
         borderRadius: "1vw",
       },
       gravity: "top",
@@ -165,11 +168,12 @@ function copiar() {
     .then(() => {
       // Notificación de éxito
       Toastify({
-        text: "Texto copiado 😀",
+        text: "Texto copiado",
         duration: 3000,
         style: {
           padding: "1.2vh 1.5vw",
-          background: "linear-gradient(to right, rgb(104, 48, 130), #f0e9f0)",
+          background: "#4c3e8c",
+          color: "#ffffff",
           borderRadius: "1vw",
         },
         gravity: "top",
@@ -183,7 +187,8 @@ function copiar() {
         text: "No se pudo copiar el texto.",
         duration: 3000,
         style: {
-          background: "linear-gradient(to right, #dc3545, #f8d7da)",
+          background: "#92141f",
+          color: "#ffffff",
           borderRadius: "1vw",
         },
         gravity: "top",
